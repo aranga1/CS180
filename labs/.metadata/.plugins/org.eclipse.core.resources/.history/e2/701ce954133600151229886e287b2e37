@@ -1,0 +1,60 @@
+package lab14;
+
+import java.util.Stack;
+
+public class Evaluator {
+	public static int evaluate(String arguments) {
+		
+		Stack<Integer> s = new Stack<Integer>();
+		int ans = 0;
+		
+		while (arguments.contains("[\\+,-,*,/]")) {
+			
+			char[] array = arguments.toCharArray();
+			
+			for (int i = 0; i < array.length; i++) {
+				
+				if (array[i] != '+' || array[i] != '-' || array[i] != '*' || array[i] != '/' || array[i] != ' ') {
+					int x = Integer.parseInt("" + array[i]);
+					s.push(x);
+					continue;
+				}
+				if (array[i] == '+') {
+					int x = s.pop();
+					int y = s.pop();
+					ans = y + x;
+					s.push(ans);
+					continue;
+				}
+				else if (array[i] == '-') {
+					int x = s.pop();
+					int y = s.pop();
+					ans = y - x;
+					s.push(ans);
+					continue;
+				}
+				else if (array[i] == '*') {
+					int x = s.pop();
+					int y = s.pop();
+					ans = y * x;
+					s.push(ans);
+					continue;
+				}
+				else if (array[i] == '/') {
+					int x = s.pop();
+					int y = s.pop();
+					ans = y / x;
+					s.push(ans);
+					continue;
+				}
+				else {
+					continue;
+				}
+			}
+		}
+		return ans;
+	}
+	public static void main(String[] args) {
+		System.out.println(evaluate("4 5+"));
+	}
+}

@@ -1,0 +1,9 @@
+public int sum3(int[] nums) {
+  int sum = 0;
+  int[] s = nums;
+  for (int i : nums) {
+    sum += nums[i];
+    //if(i == s.length) break;
+  }
+  return sum;
+}

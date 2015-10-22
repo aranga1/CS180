@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;lab10&apos;&#x0A;- Original project: &apos;lab10&apos;&#x0A;- Original elements:&#x0A;     CDPlayer.java&#x0A;     EthernetPlayer.java&#x0A;     MusicPlayer.java" description="Delete elements" element1="/src&lt;{EthernetPlayer.java" element2="/src&lt;{MusicPlayer.java" element3="/src&lt;{CDPlayer.java" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1436973344868" subPackages="false" version="1.0"/>
+</session>

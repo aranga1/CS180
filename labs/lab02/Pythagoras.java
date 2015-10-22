@@ -1,0 +1,13 @@
+import java.lang.Math;
+/**
+ * CS180 - lab 02
+ * This program finds the length of the hypotenuse using the Pythagoras theorem
+ * @Aakash Ranga, aranga@purdue.edu, lab - 01
+ */
+public class Pythagoras {
+    public double getHypotenuse(int a, int b) {
+        double hyp;
+        hyp = Math.sqrt(( a * a ) + ( b * b ));
+        return hyp;
+    }
+}

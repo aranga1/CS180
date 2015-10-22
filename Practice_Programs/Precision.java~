@@ -1,0 +1,8 @@
+public class Precision {
+    public static void main(String[] args) {
+        int x = 0;
+        double y = 12.0;
+        x = y;
+        System.out.println(x);
+    }
+}
