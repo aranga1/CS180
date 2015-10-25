@@ -1,7 +1,0 @@
-public class Pr {
-    public static void main(String[] args) {
-        boolean b = false;
-        boolean c = false;
-        System.out.println(b&&c);
-    }
-}
